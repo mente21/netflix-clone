@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+
+:root {
+  --font-base: 'Lexend', sans-serif;
+  --font-second-base: 'Inter', sans-serif;
+
+  --bg-color: #111;
+  --primary-color: #ffffff;
+  --secondary-color: #e50914;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    background-color: black;
+}
+
+
+.outer-footer-container {
+  background: black;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.inner-footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-column li:hover {
+  color: #e50914;
+  text-decoration:underline;
+}
+/* Add this to Footer.css */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+  align-items: center;
+}
