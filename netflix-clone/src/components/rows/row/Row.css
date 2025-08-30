@@ -1,0 +1,33 @@
+
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+.row-posters {
+    overflow-x: auto;
+    padding: 2vw;
+    display: flex;
+    gap: 2vw;
+    /* flex-wrap: wrap; allows posters to wrap on small screens */
+}
+
+.row-poster {
+    width: 20vw;         /* responsive width */
+    max-width: 180px;    /* don't get too big */
+    min-width: 100px;    /* don't get too small */
+    height: auto;
+    object-fit: contain;
+    transition: transform 450ms;
+    cursor: pointer;
+    flex: 1 0 20vw;      /* flex-grow, flex-shrink, flex-basis */
+}
+
+.row h2 {
+    color: white;
+    margin-left: 2vw;
+    font-size: 2vw;
+    font-weight: 800;
+}
+.row-poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
